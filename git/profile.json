@@ -1,0 +1,69 @@
+{
+  "username": "koushikrajd2011-rgb",
+  "name": "Koushik RD",
+  "tagline": "Coding, sketching and hardware.",
+  "website": "https://koushikrajd2011-rgb.github.io/MyPersonalSite/",
+  "portrait": null,
+  "tiles": [
+    {
+      "title": "Website",
+      "url": "https://koushikrajd2011-rgb.github.io/MyPersonalSite/",
+      "color": "#ff2867"
+    },
+    {
+      "title": "Repositories",
+      "url": "https://github.com/koushikrajd2011-rgb?tab=repositories",
+      "color": "#9bf23b"
+    },
+    {
+      "title": "lucidOS",
+      "url": "https://koushikrajd2011-rgb.github.io/lucidOS/",
+      "color": "#ffc51b"
+    }
+  ],
+  "featured": [
+    {
+      "name": "lucidOS",
+      "description": "A web desktop with apps, windows and themes.",
+      "language": "JavaScript",
+      "color": "#ff2867",
+      "url": "https://github.com/koushikrajd2011-rgb/lucidOS"
+    },
+    {
+      "name": "MyPersonalSite",
+      "description": "My website, with 3D objects and pixel art.",
+      "language": "JavaScript",
+      "color": "#9bf23b",
+      "url": "https://github.com/koushikrajd2011-rgb/MyPersonalSite"
+    },
+    {
+      "name": "Zeno-Bot",
+      "description": "A Slack bot for jokes, facts and definitions.",
+      "language": "HTML / bot project",
+      "color": "#ffc51b",
+      "url": "https://github.com/koushikrajd2011-rgb/Zeno-Bot"
+    },
+    {
+      "name": "CatBox",
+      "description": "An interactive cat-box webpage.",
+      "language": "CSS",
+      "color": "#ff2867",
+      "url": "https://github.com/koushikrajd2011-rgb/CatBox"
+    },
+    {
+      "name": "GhostCatcher",
+      "description": "A browser-based ghost-shooting game.",
+      "language": "JavaScript",
+      "color": "#9bf23b",
+      "url": "https://github.com/koushikrajd2011-rgb/GhostCatcher"
+    },
+    {
+      "name": "UrStudyBuddy",
+      "description": "Notes, quizzes, homework and study timers.",
+      "language": "JavaScript",
+      "color": "#ffc51b",
+      "url": "https://github.com/koushikrajd2011-rgb/UrStudyBuddy"
+    }
+  ],
+  "straw_hat": true
+}
