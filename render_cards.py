@@ -405,7 +405,7 @@ class Renderer:
         tiles = []
         for i,tile in enumerate(c["tiles"]):
             tiles.append(f'<a href="{E(tile["url"])}">'+img(f'02-tile-{i+1}.svg',tile["title"],"32.5%")+'</a>')
-        blocks.append('<p>\n'+'\n'.join(tiles)+'\n</p>')
+        blocks.append('<p>'+''.join(tiles)+'</p>')
         b = stats["busiest"]
         blocks.append(img("03-activity.svg",f'{stats["total"]} contributions; current streak {stats["streak"]} days; {stats["active"]} active days; longest streak {stats["longest"]} days; busiest day {b["date"]}: {b["count"]} contributions.'))
         for i,repo in enumerate(c["featured"]):
@@ -414,7 +414,10 @@ class Renderer:
         blocks.append(img("05-contribution-graph.svg",f'{data["as_of"][:4]} contribution graph in the Magma Mandy palette; {stats["total"]} contributions through {data["as_of"]}.'))
         blocks.append(f'<sub>Updated {data["as_of"]} · GitHub contributions · UTC · <a href="{E(c["website"])}">Visit my website</a></sub>')
         if write_readme:
-            (ROOT/"README.md").write_text("\n\n".join(blocks)+"\n",encoding="utf-8")
+            sections = list(blocks[:-1])
+            sections[1] = ''.join(tiles)
+            markup = '<p align="center">' + '<br>'.join(sections) + '</p>\n\n' + blocks[-1] + '\n'
+            (ROOT/"README.md").write_text(markup,encoding="utf-8")
         preview = '\n'.join(blocks)
 
         for card in self.output.glob("*.svg"):
@@ -422,7 +425,7 @@ class Renderer:
             preview = preview.replace(f'/{card.name}"', f'/{card.name}?v={version}"')
         document = f'''<!doctype html><html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(c["name"])} / profile preview</title>
-<style>body{{margin:0;padding:32px 16px;background:#302b31;color:#fff3e8;font:14px Arial,sans-serif}}main{{max-width:1000px;margin:auto}}img{{display:block;height:auto;max-width:100%}}p{{display:flex;gap:1.25%;margin:16px 0}}p a{{display:contents}}p img{{width:32.5%}}main>a,main>img{{display:block;margin:16px 0}}sub{{display:block;text-align:center;margin:24px}}a{{color:#ff2867}}@media(max-width:600px){{body{{padding:10px 5px}}}}</style>
+<style>body{{margin:0;padding:32px 16px;background:#302b31;color:#fff3e8;font:14px Arial,sans-serif}}main{{max-width:1000px;margin:auto}}img{{display:block;height:auto;max-width:100%}}p{{display:flex;gap:1.25%;margin:0}}p a{{display:contents}}p img{{width:32.5%}}main>a,main>img{{display:block;margin:0}}sub{{display:block;text-align:center;margin:24px}}a{{color:#ff2867}}@media(max-width:600px){{body{{padding:10px 5px}}}}</style>
 <main>{preview.replace(E(folder)+"/", "")}</main></html>'''
         (self.output/"preview.html").write_text(document,encoding="utf-8")
         def embed(match):
