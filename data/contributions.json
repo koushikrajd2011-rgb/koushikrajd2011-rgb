@@ -2,7 +2,7 @@
   "username": "koushikrajd2011-rgb",
   "as_of": "2026-11-10",
   "from": "2026-01-01",
-  "source": "GitHub public contribution calendar (UTC), https://github.com/users/koushikrajd2011-rgb/contributions?from=2026-01-01&to=2026-11-10",
+  "source": "GitHub GraphQL contributionCalendar (UTC)",
   "days": [
     {
       "date": "2026-01-01",
@@ -1258,7 +1258,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 0
+      "count": 2
     }
   ]
 }

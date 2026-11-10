@@ -6,7 +6,7 @@
 <a href="https://koushikrajd2011-rgb.github.io/lucidOS/"><img src="cards/02-tile-3.svg" alt="lucidOS" width="32.5%"></a>
 </p>
 
-<img src="cards/03-activity.svg" alt="181 contributions; current streak 0 days; 64 active days; longest streak 5 days; busiest day 2026-06-23: 16 contributions." width="100%">
+<img src="cards/03-activity.svg" alt="183 contributions; current streak 1 days; 65 active days; longest streak 5 days; busiest day 2026-06-23: 16 contributions." width="100%">
 
 <a href="https://github.com/koushikrajd2011-rgb/lucidOS"><img src="cards/04-repo-01-lucidos.svg" alt="lucidOS — A web desktop with apps, windows and themes." width="100%"></a>
 
@@ -20,6 +20,6 @@
 
 <a href="https://github.com/koushikrajd2011-rgb/UrStudyBuddy"><img src="cards/04-repo-06-urstudybuddy.svg" alt="UrStudyBuddy — Notes, quizzes, homework and study timers." width="100%"></a>
 
-<img src="cards/05-contribution-graph.svg" alt="2026 contribution graph in the Magma Mandy palette; 181 contributions through 2026-11-10." width="100%">
+<img src="cards/05-contribution-graph.svg" alt="2026 contribution graph in the Magma Mandy palette; 183 contributions through 2026-11-10." width="100%">
 
 <sub>Updated 2026-11-10 · GitHub contributions · UTC · <a href="https://koushikrajd2011-rgb.github.io/MyPersonalSite/">Visit my website</a></sub>
